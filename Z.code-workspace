@@ -1,0 +1,60 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+
+	"settings": {
+ 
+        "files.exclude": {
+            "*.d": true,
+            "*.o": true,
+            "*.pyc": true,
+            "**/*.run": true,
+            "**/lnx86_*_gcc*": true,
+        },
+     "files.watcherExclude": {
+            "**/build/**": true,
+            "**/doc": true,
+            "**/doc/**": true,
+            "**/html": true,
+            "**/html/**": true,
+            "**/lcov": true,
+            "**/lcov/**": true,
+            "**/output": true,
+     },
+
+    "search.exclude": {
+            "**/.cpptest": true,
+            "**/build": true,
+            "**/doc": true,
+            "**/output": true,
+            "**/qa": true
+          
+          },
+          "files.associations": {
+            "array": "cpp",
+            "atomic": "cpp",
+            "strstream": "cpp",
+            "bit": "cpp",
+            "*.tcc": "cpp",
+            "bitset": "cpp",
+            "cctype": "cpp",
+            "vector": "cpp",
+            "__locale": "cpp",
+            "locale": "cpp",
+            "ostream": "cpp"
+          },
+        "editor.bracketPairColorization.enabled": true,
+        "makefile.makefilePath": "",
+        "workbench.colorTheme": "Monokai",
+        "[python]": { "editor.formatOnType": true},
+        "window.zoomLevel": -1,
+        "editor.cursorStyle": "block",
+        "C_Cpp.default.compilerPath": "/opt/homebrew/bin//g++-13",
+        "makefile.buildLog": "mklog",
+       }
+        //"makefile.defaultLaunchConfiguration": null,
+        ///usr/bin/clang++",
+}
