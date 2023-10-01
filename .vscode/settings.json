@@ -1,0 +1,91 @@
+{
+  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.preferredDarkColorTheme": "Monokai Dimmed",
+  "explorer.confirmDelete": false,
+  "editor.fontSize": 18,
+  "editor.minimap.autohide":true,
+  "editor.autoIndent": "advanced",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.cursorBlinking": "solid",
+  "extensions.ignoreRecommendations": true,
+  "kite.showWelcomeNotificationOnStartup": false,
+  "debug.onTaskErrors": "showErrors",
+  "editor.tabSize": 2,
+  "debug.terminal.clearBeforeReusing": true,
+  "terminal.integrated.fontSize": 16,
+  "debug.console.closeOnEnd": true,
+  "debug.console.fontSize": 14,
+  "workbench.tree.indent": 4,
+  "C_Cpp.clang_format_fallbackStyle": "\"{ BasedOnStyle: Google, IndentWidth: 2}\"",
+  "python.condaPath": "/opt/miniconda/bin",
+  "python.envFile": "/opt/miniconda/envs/ai",
+  "editor.wordWrap": "wordWrapColumn",
+  "files.autoSave": "onWindowChange",
+  "aws.telemetry": false,
+  "[python]": {
+      "editor.formatOnType": true
+  },
+  "open-in-vim.openMethod": "gvim",
+  "open-in-vim.restoreCursorAfterVim": true,
+  "workbench.preferredHighContrastColorTheme": "Monokai Dimmed",
+  "workbench.preferredHighContrastLightColorTheme": "Monokai",
+  "workbench.preferredLightColorTheme": "Monokai",
+  "typescript.inlayHints.enumMemberValues.enabled": true,
+  "workbench.colorTheme": "Monokai",
+  "workbench.colorCustomizations": {
+
+  
+  },
+  "editor.fontLigatures": false,
+  "update.showReleaseNotes": false,
+  "workbench.iconTheme": "vs-minimal",
+  "makefile.configurations": [
+
+  ],
+
+
+  "makefile.launchConfigurations": [
+    {
+       //"cwd": "drive/where/you/want/to/run/from/folder",
+       "name": "default",
+       "cwd": "${workspaceRoot}",
+       "binaryPath": "eureka",   
+       "MIMode": "gdb",
+       "miDebuggerPath": "/usr/bin",
+       //"binaryArgs": [
+       //   "arg1",
+       //  "arg2"
+       //],
+       "stopAtEntry": true
+    }
+  ],
+  //"makefile.defaultLaunchConfiguration": makefile.launchdefault,
+  "C_Cpp_Runner.cCompilerPath": "/usr/bin/clang",
+  "C_Cpp_Runner.cppCompilerPath": "/usr/bin/clang++",
+  "C_Cpp_Runner.debuggerPath": "/usr/bin/lldb",
+  "C_Cpp_Runner.cStandard": "", 
+  "C_Cpp_Runner.cppStandard": "", 
+  "C_Cpp_Runner.msvcBatchPath": "", 
+  "C_Cpp_Runner.warnings": [
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic"
+  ],  
+  "C_Cpp_Runner.enableWarnings": true,
+  "C_Cpp_Runner.warningsAsError": false,
+  "C_Cpp_Runner.compilerArgs": [], 
+  "C_Cpp_Runner.linkerArgs": [], 
+  "C_Cpp_Runner.includePaths": [], 
+  "C_Cpp_Runner.includeSearch": [
+    "*",
+    "**/*"
+  ],  
+  "C_Cpp_Runner.excludeSearch": [
+    "**/build",
+    "**/build/**",
+    "**/.*",
+    "**/.*/**",
+    "**/.vscode",
+    "**/.vscode/**"
+  ]
+}
