@@ -16,7 +16,7 @@ public:
  T m_data;
  Node *m_next;
  
- Node():m_next(nullptr){}; // MVIK: very important to not use default
+ Node():m_next(nullptr){}; // MVIK: very important to not use default, m_head may be dangling
  Node(T data):m_next(nullptr) {    
     this->m_data = data;        
  }
@@ -45,6 +45,7 @@ class List {
 
 
 // ========================================================== 
+// mvik: GraphClass
 template <class T> 
 class GNode {
   T val;
@@ -66,4 +67,38 @@ class Graph {
     void DFS(T s);
     void DFSutil(T s, bool visited[]);
 }; 
+
+
+using namespace std;
+struct TreeNode {
+    int val;
+    TreeNode *left, *right;
+    TreeNode():val(-1),left(nullptr), right(nullptr){};
+    ~TreeNode(){};
+};
+
+// mvik: class Binary Tree
+class binaryTree {
+private:
+    TreeNode *root ;
+public:
+    binaryTree():root(NULL){};
+    void insert_node(){};
+    void print_root() {
+        std::cout<< root << endl;
+    }
+    
+};
+
+struct bstNode {
+    int nodeval ;
+    bstNode *left, *right;
+    bstNode():nodeval(-1), left(nullptr), right(nullptr){};
+    bstNode(int val):nodeval(val), left(nullptr), right(nullptr){};
+    void inorder_print(bstNode*);
+    bstNode* insert(bstNode*, int);
+};
+
+
+
 #endif
