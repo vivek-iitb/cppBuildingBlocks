@@ -27,7 +27,7 @@
   },
   "open-in-vim.openMethod": "gvim",
   "open-in-vim.restoreCursorAfterVim": true,
-  "workbench.preferredHighContrastColorTheme": "Monokai Dimmed",
+  "workbench.preferredHighContrastColorTheme": "Monokai",
   "workbench.preferredHighContrastLightColorTheme": "Monokai",
   "workbench.preferredLightColorTheme": "Monokai",
   "typescript.inlayHints.enumMemberValues.enabled": true,

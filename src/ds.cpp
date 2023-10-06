@@ -4,13 +4,13 @@
 
 #if 0 
 static int **my2DAlloc(int rows=0, int cols=0) {
-int **rowptr ;
-rowptr = (int **) malloc (rows *sizeof(int*)) ; 
-for (int i =0 ; i< rows ; i++ ) {
-  rowptr[i] = (int *) malloc (cols *sizeof (int)) ;
-}
-return rowptr; 
-//int ** myarray = my2DAlloc (2,2) ;
+  int **rowptr ;
+  rowptr = (int **) malloc (rows *sizeof(int*)) ; 
+  for (int i =0 ; i< rows ; i++ ) {
+    rowptr[i] = (int *) malloc (cols *sizeof (int)) ;
+  }
+  return rowptr; 
+  //int ** myarray = my2DAlloc (2,2) ;
 }
 
 
@@ -33,12 +33,12 @@ void List<T>::insertNode() {
   if (!cur) {
     return;
   }
-  
+
   for (int i= 0 ; i < 10 ; i++) {
     Node<T> *tmp = new Node<T>(rand()%10);    
     cur->m_next = tmp;         
     cur = cur->m_next;    
-    }
+  }
 }
 
 template <class T>
@@ -53,7 +53,7 @@ void List<T>::reverseList() {
     prev = current ; // move ahead
     current = next ; // move ahead
   }
- 
+
   this->m_head=prev;
 }
 
@@ -78,7 +78,7 @@ void Graph<T>::addEdge(T v , T w) {
 
 template <class T>
 void Graph<T>::BFS(T s) {
-  
+
   bool visited[m_nv] ;
   // mark all vertex unvisitied
   for ( int i = 0 ; i < m_nv ; i++ ) {
@@ -129,44 +129,41 @@ void Graph<T>::DFS (T s ) {
 }
 
 // mvik: BST routines
-bstNode* bstNode::insert(bstNode *root, int val) {
-    if (!root)
-    {
-        root = new bstNode(-1);
-        root->nodeval = val;
-        return root;
-    }
-
-    if (val < root->nodeval)
-    {
-        root->left = insert(root->left, val);
-    }
-    else 
-    {
-        root->right = insert(root->right, val);
-    }
+treeNode* treeNode::insert(treeNode *root, int val) {
+  if (!root)   {
+    root = new treeNode(-1);
+    root->m_val = val;
     return root;
+  }
+
+  if (val < root->m_val)   {
+    root->m_left = insert(root->m_left, val);
+  } else {
+    root->m_right = insert(root->m_right, val);
+  }
+  return root;
 }
-void bstNode::inorder_print(bstNode *root) {
-    if (!root) return ;
-    inorder_print(root->left);
-    cout << root->nodeval << endl;
-    inorder_print(root->right);
+
+void treeNode::inorder_print(treeNode *root) {
+  if (!root) return ;
+  inorder_print(root->m_left);
+  std::cout << root->m_val << std::endl;
+  inorder_print(root->m_right);
 }
 
 template class List<int>;;
 template class Graph<int>;
 
 /*
-int lca(bstNode* root, int val1, int val2)
-{
-  if (!root) return -1; 
-  cout << "root - node val " << root->nodeval << endl;
-  if (val1  < root->nodeval && val2 < root->nodeval)  
-      return lca(root->left, val1, val2);  
-  else if (val1  > root->nodeval && val2  > root->nodeval)  
-      return lca(root->right, val1, val2);  
-  else
-      return  root->nodeval;
-}
-*/
+   int lca(bstNode* root, int val1, int val2)
+   {
+   if (!root) return -1; 
+   cout << "root - node val " << root->nodeval << endl;
+   if (val1  < root->nodeval && val2 < root->nodeval)  
+   return lca(root->m_left, val1, val2);  
+   else if (val1  > root->nodeval && val2  > root->nodeval)  
+   return lca(root->right, val1, val2);  
+   else
+   return  root->nodeval;
+   }
+   */

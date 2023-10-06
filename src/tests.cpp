@@ -6,7 +6,7 @@ void linked_list_test() {
   ll.printList();
   ll.reverseList();
   ll.printList();
-}
+
 // mvik : the x coordinate actually represents the column value in 2-D Matrix
 static void display_points_on_terminal(std::vector<Point<int>> &p, int range) {
   const int xgrid = range;
