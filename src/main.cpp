@@ -6,6 +6,7 @@ int main() {
   std::srand(static_cast<unsigned int>(std::time(nullptr)));
   std::cout<<"Main call\n";
  // linked_list_test();
-  geom_test();
+ // geom_test();
+  stack_test();
   return 0;
 }

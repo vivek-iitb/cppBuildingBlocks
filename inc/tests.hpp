@@ -6,4 +6,5 @@
 void linked_list_test();
 void geom_test();
 void graph_test();
+void stack_test();
 #endif

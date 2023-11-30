@@ -6,6 +6,7 @@ void linked_list_test() {
   ll.printList();
   ll.reverseList();
   ll.printList();
+  }
 
 // mvik : the x coordinate actually represents the column value in 2-D Matrix
 static void display_points_on_terminal(std::vector<Point<int>> &p, int range) {
@@ -67,11 +68,24 @@ void graph_test() {
   g.DFS(0);
 }
 
-void  bstNode_test() {
+
+
+void  bstNode_test() {}
+  /*
     auto *root = new bstNode(5); 
     root = root->insert(root, 3);
     root = root->insert(root, 3);
     root = root->insert(root, 3);
     //cout << "LCA of " << v1 << " " << v2 <<" =  "<< lca(root,v1,v2) <<endl;
+  */
 
+
+void stack_test() {
+  Stack<int> test_st(5);
+  test_st.push(10);
+  test_st.push(0);
+  test_st.push(9);
+  test_st.push(4);
+  test_st.print_stack();
 }
+

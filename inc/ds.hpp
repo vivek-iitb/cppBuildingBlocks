@@ -106,4 +106,54 @@ class binaryTree {
   }
 };
 
+
+// implement using array
+template <typename T>
+class Stack {
+private:
+  int top_index;
+  int m_capacity;
+  T *m_stack;
+public:
+  Stack(int initial_size){
+    m_capacity = initial_size;
+    m_stack = new T[initial_size];
+    top_index = -1;
+  };
+  
+  T top() {
+    if (this->is_empty()) {
+     std::cerr << "Error: Stack is empty" << std::endl;
+    }
+    return m_stack[top_index];
+  }
+
+  void pop() {
+    if (this->is_empty()) {
+      return;
+    }
+    top_index--;
+  }
+
+  bool is_empty() {
+    return top_index < 0;
+  }
+
+  void push(T val) {
+    top_index++;
+    m_stack[top_index] = val;
+  }
+
+  ~Stack() {
+    delete [] m_stack;
+  }
+
+  void print_stack () {
+    for (auto i=top_index; i>=0 ; i--) {
+      std::cout << m_stack[i] << std::endl;
+    }
+  }
+
+};
+template class Stack<int>;
 #endif

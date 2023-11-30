@@ -3,3 +3,26 @@
 --template: https://stackoverflow.com/questions/2351148/explicit-template-instantiation-when-is-it-used
 --compiler: Your compiler probably doesn’t remember the details of one .cpp file while it is compiling another .cpp file. It could, but most do not and if you are reading this FAQ, it almost definitely does not. BTW this is called the “separate compilation model.”
 
+--git 
+-Create new repo
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:vivek-iitb/pyBuildingBlocks.git
+git push -u origin main
+
+--push an existing repository from the command line
+git remote add origin git@github.com:vivek-iitb/pyBuildingBlocks.git
+git branch -M main
+git push -u origin main
+
+git add    
+git fsck --unreachable 
+git log --all oneline  
+git log --oneline 
+git log -reflog 
+git reset~1 
+git reset 4cfed60 
+git reset current~1 
+git reset --hard 4ba7105
